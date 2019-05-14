@@ -39,7 +39,7 @@ class Main extends Component {
     if (auth.isAuthenticated === true) {
       userAuth = (
         <Button
-          style={{ margin: 10 }}
+          style={{ margin: 10, position: "relative", floatLeft: true }}
           className="button1"
           type="primary"
           onClick={this.onLogoutClick}
