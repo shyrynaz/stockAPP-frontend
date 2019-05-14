@@ -48,7 +48,7 @@ class Main extends Component {
       );
     } else {
       userAuth = (
-        <Button href="/login" type="secondary" style={{ margin: 10 }}>
+        <Button href="/login" type="primary" style={{ margin: 10 }}>
           Login
         </Button>
       );
