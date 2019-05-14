@@ -39,8 +39,7 @@ class Main extends Component {
     if (auth.isAuthenticated === true) {
       userAuth = (
         <Button
-          style={{ margin: 10, position: "relative", floatLeft: true }}
-          className="button1"
+          style={{ margin: 10 }}
           type="primary"
           onClick={this.onLogoutClick}
         >
@@ -49,12 +48,7 @@ class Main extends Component {
       );
     } else {
       userAuth = (
-        <Button
-          href="/login"
-          className="button1"
-          type="secondary"
-          style={{ margin: 10 }}
-        >
+        <Button href="/login" type="secondary" style={{ margin: 10 }}>
           Login
         </Button>
       );
@@ -119,7 +113,7 @@ class Main extends Component {
                   onClick={this.toggle}
                 />
                 Stock<b>Recommendation</b>
-                {userAuth}
+                <div className="button1">{userAuth}</div>
               </Header>
             </Affix>
             <Content
